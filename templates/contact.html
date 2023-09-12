@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ข้อมูลผู้พัฒนา</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0 auto;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            background-color: #f2f2f2;
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* จัดให้อยู่ตรงกลางแนวนอน */
+            justify-content: center; /* จัดให้อยู่ตรงกลางแนวตั้ง */
+            min-height: 100vh; /* ความสูงขั้นต่ำของหน้าเว็บ */
+        }
+
+        h1 {
+            text-align: center;
+            color: #6d88ba;
+        }
+
+        p {
+            text-align: center;
+            font-size: 18px;
+        }
+
+        .contact-info {
+            margin-top: 30px;
+        }
+
+        .contact-info p {
+            margin-bottom: 10px;
+        }
+
+        .contact-form {
+            margin-top: 30px;
+        }
+
+        .contact-form label {
+            display: flex;
+            margin-bottom: 10px;
+        }
+
+        .contact-form input[type="text"],
+        .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+
+        .contact-form button {
+            background-color: #6d88ba;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .contact-form button:hover {
+            background-color: #536d92;
+        }
+
+        .welcome-link a {
+            color: #85a5cf;
+            text-decoration: none;
+        }
+
+        .welcome-link {
+            text-align: center;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    {% include 'navbar.html' %}
+    <h1>ข้อมูลผู้พัฒนา</h1>
+    <p> นางสาวพัฒนาภรณ์ แช่มช้อย รหัสนิสิต 63313299 สาขาวิทยาการคอมพิวเตอร์ คณะวิทยาศาสตร์ มหาวิทยาลัยนเรศวร</p>
+    <div class="contact-info">
+        <p>อีเมล: pattanapornc63@nu.ac.th</p>
+        <p>เบอร์ติดต่อ: 065 572 4265</p>
+        <p>ที่อยู่: 15/1 Moo8, banrai, Bangkrathum, Phitsanulok,Thailand</p>
+    </div>
+    <div class="welcome-link">
+        <a href="{{ url_for('welcome_page') }}">หน้าแรก</a>
+    </div>
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    </header>
+    <title>ระบบตรวจวัดความชื้นเมล็ดข้าวเปลือก</title>
+    <style>
+        /* สไตล์ของ Navbar */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* จัดให้อยู่ตรงกลางแนวนอน */
+            justify-content: center; /* จัดให้อยู่ตรงกลางแนวตั้ง */
+            min-height: 100vh; /* ความสูงขั้นต่ำของหน้าเว็บ */
+        }
+
+        /* สไตล์ของแถบด้านบน */
+        header {
+            background-color: #6d88ba;
+            padding: 10px;
+            color: #ffffff;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+        }
+
+        /* สไตล์ของรายการเมนูใน Navbar */
+        nav {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline-block;
+            margin-left: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #ffffff;
+            padding: 8px 12px;
+            border-radius: 5px;
+        }
+
+        nav ul li a:hover {
+            background-color: #ffffff;
+            color: #6d88ba;
+        }
+
+        main {
+            text-align: center;
+            margin-top: 60px; /* ขยับเนื้อหาลงมาเพื่อไม่ให้ถูกซ่อนด้วยแถบด้านบน */
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: calc(100vh - 60px); /* ให้ส่วนเนื้อหามีความสูงเท่ากับความสูงของหน้าเว็บลบด้วยความสูงของแถบด้านบน */
+        }
+
+        /* สไตล์ของข้อความในเนื้อหา */
+        h1, p {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="{{ url_for('welcome_page') }}">หน้าแรก</a></li>
+                <li><a href="{{ url_for('index') }}">หน้าวิเคราะห์</a></li>
+                <li><a href="{{ url_for('contact') }}">ติดต่อ</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- ส่วนอื่น ๆ ของเว็บไซต์ -->
+</body>
+</html>

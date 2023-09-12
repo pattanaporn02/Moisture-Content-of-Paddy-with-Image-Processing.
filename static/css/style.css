@@ -1,0 +1,49 @@
+/* สไตล์เว็บเพื่อความสวยงาม สีน้ำเงิน */
+body {
+    font-family: Arial, sans-serif;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #f2f2f2;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* จัดให้อยู่ตรงกลางแนวนอน */
+    justify-content: center; /* จัดให้อยู่ตรงกลางแนวตั้ง */
+    min-height: 100vh; /* ความสูงขั้นต่ำของหน้าเว็บ */
+    overflow: hidden; /* ไม่ให้เลื่อนหน้ากระดาษไปด้านล่าง */
+}
+
+h1 {
+    text-align: center;
+    color: #6d88ba;
+}
+
+form {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* อัพเดทการจัดแสดงปุ่มให้อยู่ตรงกลาง */
+form button,
+form input[type="submit"] {
+    display: block;
+    margin: 10px auto;
+}
+
+/* สไตล์เพิ่มเติมให้เหมาะสำหรับหน้าจอเล็ก */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 24px;
+    }
+
+    .capture-button,
+    .predict-button {
+        padding: 10px 15px;
+        font-size: 14px;
+    }
+
+    .predictions li {
+        font-size: 14px;
+    }
+}
